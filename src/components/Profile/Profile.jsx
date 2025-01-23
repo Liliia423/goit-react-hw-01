@@ -1,17 +1,19 @@
-import './Profile.module.css'
+import styles from './Profile.module.css';
 //import { useState } from 'react'
 //import viteLogo from '/vite.svg'
 
 export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
+    <div className={styles['profile-card']}>
+     
       <img
         src={image}
         alt="User avatar"
       />
-      <p>{name}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
+      <p className={styles['user-name']}>{name}</p>
+      <p className={styles['user-about']}>@{tag}</p>
+        <p className={styles['user-about']}>{location}</p>
+      
       <ul>
         <li>
           <span>Followers:</span>
