@@ -30,7 +30,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #212121;
     margin-top: 22px;
     margin-bottom: 28px;
 }
